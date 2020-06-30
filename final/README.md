@@ -14,7 +14,6 @@ Google Hacking 是利用搜尋引擎的爬蟲紀錄做公開情資蒐集的技�
 - Clear All 會清除搜尋欄位和 option blocks
 ## Related Technique
 #### Jquery drag and drop
-#### String formating
 #### Google Hacking
 
 ## Features

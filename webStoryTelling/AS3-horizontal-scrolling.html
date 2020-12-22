@@ -3,58 +3,62 @@
 <html lang="en">
 
 <head>
+    
+<!doctype html>
+<html lang="en">
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.1/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=5426"></script>
-    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
-    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
     <title>Hello, world!</title>
-    
 </head>
 
 <body>
-<!-- SCROLL CONTAINER -->
-<div ></div>
-<div class="sticky-top">
-<div class="smooth-scroll">
-  
-  <div class="section-wrapper" data-scroll-section>
 
-
-   <section id="sectionPin" >
-     <div class="pin-wrap">
-<!--         <div class="animation-wrap to-right" id="animateThis-0"> -->
-           <div class="pin-box">pin box 1</div>
-           <div class="pin-box">pin box 2</div>
-           <div class="pin-box">pin box 3</div>
-     </div>
-   </section>
-
-   <section id="section3">
-      <div id="box7" class="parallax" data-speed=".2" style="transform: translate3d(0px, -63.8055px, 0px); opacity: 1; visibility: inherit;"></div>
-      <div id="box8" data-scroll="" data-scroll-speed="1" style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 100.865, 0, 1); opacity: 1; visibility: inherit;" class="is-inview">
-       <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget laoreet magna, eu ornare lorem. Integer id commodo nunc, at maximus neque. Aliquam eu orci ac mi ornare maximus. Vestibulum ultricies sollicitudin erat, sed interdum enim eleifend sed. Mauris consequat sapien nibh, et convallis lacus eleifend ac. Curabitur ipsum nunc, placerat et mattis ut, molestie non mauris. Ut ultricies est a justo fringilla, vel ultrices mi fringilla. Maecenas vel ultricies nisl, vel feugiat est. Etiam sit amet magna id ante mollis commodo quis a ipsum.</p>
-    
-    <p>Sed congue nisi dolor, quis dapibus lacus pharetra nec. Proin metus odio, dapibus sit amet erat ac, semper rutrum ipsum. Sed in lacinia eros, non ultrices mi. Cras tempus ultricies malesuada. Quisque diam mi, ornare ac odio sit amet, fermentum sagittis nibh. Donec lectus orci, suscipit a lorem nec, mollis sagittis metus. Suspendisse vel tristique lorem. Aenean enim leo, consectetur in tristique quis, tincidunt sed ex.</p>
-    
-    <p>Integer et tellus at enim faucibus facilisis id ut est. Nulla facilisi. Sed orci orci, interdum at sagittis at, vehicula vel purus. Vivamus ac ante tempus, laoreet nibh at, tempus massa. Fusce sit amet dui purus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut imperdiet velit eu libero tempor molestie.</p>
-    
-    <p>Pellentesque consectetur, ligula et mollis posuere, diam ipsum maximus nisi, et fermentum elit erat id arcu. Donec non lobortis velit, eget accumsan dolor. Ut tristique dapibus mi. Donec suscipit, risus eu euismod mollis, ligula neque ultrices metus, ac fringilla est ligula sed lectus. Vivamus viverra a ante id tincidunt. Nam luctus lacus vel leo accumsan egestas. Etiam at pretium leo. Maecenas eu ultrices magna, sed pellentesque sapien. Phasellus ut purus eu massa hendrerit bibendum. Donec a eleifend urna. Curabitur pellentesque felis in mauris posuere, eget semper leo blandit. Donec maximus posuere commodo. Cras dictum erat erat. Pellentesque vulputate diam consequat nulla ultricies, in vehicula elit rhoncus. Donec ullamcorper, mauris at tristique elementum, erat lectus volutpat enim, non varius diam sem vitae erat. Duis at neque quis neque iaculis imperdiet nec quis leo.</p>
+    <div class="" style="height:150vh;background-image: url(1.png); background-repeat: no-repeat;"></div>
+    <div id = "outer" class="" style="height:2000vh;background:linear-gradient(0deg, black, lightgrey)">
+        <div class="sticky-top">
+            <div id="horizontal" style="width:1200vw;position:absolute;top:0;left:0;">
+                <div class="row">
+                    <div class="col-1" style="height:1000px;width:1000px;background-image: url(4.png);background-repeat:no-repeat;">1</div>
+                    <div class="col-1" style="height:100vh;background-image: url(2.png)">1</div>
+                    <div class="col-1" style="height:100vh;background-image: url(2.png)">1</div>
+                    
+                </div>
+            </div>
         </div>
-    </section>
-  
-</div><!-- section wrapper -->
-</div> <!--smooth scroll-->
-</div>
-<script src="script.js"></script>
+    </div>
+    <div class="" style="height:100vh;background-color:coral;"></div>
+    <div class="" style="height:100vh;background-color:#555;"></div>
 
-</body>
-</html>
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <script>
+    $(window).scroll(function(){
+        var current_pos = $(document).scrollTop();
+        var winw = $(window).width();
+        var outerh = $("#outer").height();
+        var outer_pos = $("#outer").offset().top;
+        console.log(current_pos + "/" + outer_pos);
+        if(current_pos > outer_pos && current_pos <= outer_pos + outerh){
+            update_left = (-1)*($("#horizontal").width()-winw)*(current_pos - outer_pos)/outerh;
+            console.log(update_left);
+            $("#horizontal").css("left", update_left);
+        }
+    });
+    
+    </script>
+
+</body></html>

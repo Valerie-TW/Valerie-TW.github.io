@@ -1,25 +1,98 @@
-
 <!doctype html>
 <html lang="en">
 
 <head>
-    
-<!doctype html>
-<html lang="en">
 
-<head>
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <title>Hello, world!</title>
+    <title>Horizontal Scrolling</title>
+
+
+    <style type='text/css'>
+        .section1 {
+            display: block;
+            width: 557px;
+            height: 300px;
+            float: left;
+            /*        margin-left: 20px;*/
+            opacity: .6;
+            border-radius: 6px;
+        }
+
+        .section2 {
+            display: block;
+            width: 591px;
+            height: 300px;
+            float: left;
+            /*        margin-left: 20px;*/
+            opacity: .6;
+            border-radius: 6px;
+        }
+
+
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            overflow-y: hidden;
+            overflow-x: scroll;
+            background-color: #ABFFFF;
+        }
+
+        #filler {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 3900px;
+            height: 100%;
+        }
+
+        #container {
+            width: 2370px;
+            position: absolute;
+            top: 50%;
+            margin-top: -150px;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        #return-link {
+            position: fixed;
+            top: 12px;
+            left: 18px;
+            font: 11px Verdana, Arial, sans-serif;
+            text-transform: uppercase;
+        }
+
+        #return-link:link,
+        #return-link:visited {
+            color: #06F;
+            text-decoration: none;
+        }
+
+        #return-link:hover,
+        #return-link:active {
+            text-decoration: underline;
+        }
+
+    </style>
 </head>
 
 <body>
 
+<<<<<<< HEAD
     <div class="sticky-top" style="height:100vh;background-image: url(221.png);background-repeat: no-repeat;"></div>
         <div id = "outer" class="" style="height:800vh;background:linear-gradient(0deg, black, lightgrey)">
             <div class="sticky-top">
@@ -71,13 +144,58 @@
                                     
                  </div>
                 </div>
+=======
+    <!--<div id="filler"></div>-->
+    <div id="container">
+
+        <div class="section1 " style="background-color: #63FFFF;">
+
+            <div style=" position: absolute;left: 0px; height: 200px">
+                <img src="5.png">
+            </div>
+            <div style="position: absolute;left: 0px;top:0px; height: 50px ;max-width:50px;height: auto" data-aos="fade-up">
+                <img src="start1.png">
+            </div>
+
+
+        </div>
+
+        <div class="section2 " style="background-color: #12FFFF">
+            <div>
+                <img src="2.png">
+            </div>
+            <div style="position: absolute; top:20px;left:600px;">
+             <img src="bearw.png">
             </div>
         </div>
+        <div class="section2 " style="background-color: #00D6D6">
+            <div>
+                <img src="2.png">
+>>>>>>> 9ba40840a07db2aa412aa25742935dbe54617216
+            </div>
+        </div>
+        <div class="section2 " style="background-color: #00ADAD">
+            <div>
+                <img src="2.png">
+            </div>
+            <div style="position: absolute;left: 2300px;top:150px;" data-aos="fade-up">
+                <img src="end1.png">
+            </div>
+        </div>
+
+
+
+        <div class="clear"></div>
+
     </div>
+<<<<<<< HEAD
     
     <div class="" style="height:100vh;background-color:#555;">
         <div style="top: 30px;left:50px;"><img src="j.png"></div>
     </div>
+=======
+
+>>>>>>> 9ba40840a07db2aa412aa25742935dbe54617216
 
 
 
@@ -85,23 +203,237 @@
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src=""></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-    $(window).scroll(function(){
-        var current_pos = $(document).scrollTop();
-        var winw = $(window).width();
-        var outerh = $("#outer").height();
-        var outer_pos = $("#outer").offset().top;
-        console.log(current_pos + "/" + outer_pos);
-        if(current_pos > outer_pos && current_pos <= outer_pos + outerh){
-            update_left = (-1)*($("#horizontal").width()-winw)*(current_pos - outer_pos)/outerh;
-            console.log(update_left);
-            $("#horizontal").css("left", update_left);
-        }
-    });
-    
+        $(document).ready(function() {
+
+            $('html, body, *').mousewheel(function(e, delta) {
+                this.scrollLeft -= (delta * 40);
+                e.preventDefault();
+            });
+
+        });
+
+
+
+        (function(factory) {
+            if (typeof define === 'function' && define.amd) {
+                // AMD. Register as an anonymous module.
+                define(['jquery'], factory);
+            } else if (typeof exports === 'object') {
+                // Node/CommonJS style for Browserify
+                module.exports = factory;
+            } else {
+                // Browser globals
+                factory(jQuery);
+            }
+        }(function($) {
+
+            var toFix = ['wheel', 'mousewheel', 'DOMMouseScroll', 'MozMousePixelScroll'],
+                toBind = ('onwheel' in document || document.documentMode >= 9) ? ['wheel'] : ['mousewheel', 'DomMouseScroll', 'MozMousePixelScroll'],
+                slice = Array.prototype.slice,
+                nullLowestDeltaTimeout, lowestDelta;
+
+            if ($.event.fixHooks) {
+                for (var i = toFix.length; i;) {
+                    $.event.fixHooks[toFix[--i]] = $.event.mouseHooks;
+                }
+            }
+
+            var special = $.event.special.mousewheel = {
+                version: '3.1.9',
+
+                setup: function() {
+                    if (this.addEventListener) {
+                        for (var i = toBind.length; i;) {
+                            this.addEventListener(toBind[--i], handler, false);
+                        }
+                    } else {
+                        this.onmousewheel = handler;
+                    }
+                    // Store the line height and page height for this particular element
+                    $.data(this, 'mousewheel-line-height', special.getLineHeight(this));
+                    $.data(this, 'mousewheel-page-height', special.getPageHeight(this));
+                },
+
+                teardown: function() {
+                    if (this.removeEventListener) {
+                        for (var i = toBind.length; i;) {
+                            this.removeEventListener(toBind[--i], handler, false);
+                        }
+                    } else {
+                        this.onmousewheel = null;
+                    }
+                },
+
+                getLineHeight: function(elem) {
+                    return parseInt($(elem)['offsetParent' in $.fn ? 'offsetParent' : 'parent']().css('fontSize'), 10);
+                },
+
+                getPageHeight: function(elem) {
+                    return $(elem).height();
+                },
+
+                settings: {
+                    adjustOldDeltas: true
+                }
+            };
+
+            $.fn.extend({
+                mousewheel: function(fn) {
+                    return fn ? this.bind('mousewheel', fn) : this.trigger('mousewheel');
+                },
+
+                unmousewheel: function(fn) {
+                    return this.unbind('mousewheel', fn);
+                }
+            });
+
+
+            function handler(event) {
+                var orgEvent = event || window.event,
+                    args = slice.call(arguments, 1),
+                    delta = 0,
+                    deltaX = 0,
+                    deltaY = 0,
+                    absDelta = 0;
+                event = $.event.fix(orgEvent);
+                event.type = 'mousewheel';
+
+                // Old school scrollwheel delta
+                if ('detail' in orgEvent) {
+                    deltaY = orgEvent.detail * -1;
+                }
+                if ('wheelDelta' in orgEvent) {
+                    deltaY = orgEvent.wheelDelta;
+                }
+                if ('wheelDeltaY' in orgEvent) {
+                    deltaY = orgEvent.wheelDeltaY;
+                }
+                if ('wheelDeltaX' in orgEvent) {
+                    deltaX = orgEvent.wheelDeltaX * -1;
+                }
+
+                // Firefox < 17 horizontal scrolling related to DOMMouseScroll event
+                if ('axis' in orgEvent && orgEvent.axis === orgEvent.HORIZONTAL_AXIS) {
+                    deltaX = deltaY * -1;
+                    deltaY = 0;
+                }
+
+                // Set delta to be deltaY or deltaX if deltaY is 0 for backwards compatabilitiy
+                delta = deltaY === 0 ? deltaX : deltaY;
+
+                // New school wheel delta (wheel event)
+                if ('deltaY' in orgEvent) {
+                    deltaY = orgEvent.deltaY * -1;
+                    delta = deltaY;
+                }
+                if ('deltaX' in orgEvent) {
+                    deltaX = orgEvent.deltaX;
+                    if (deltaY === 0) {
+                        delta = deltaX * -1;
+                    }
+                }
+
+                // No change actually happened, no reason to go any further
+                if (deltaY === 0 && deltaX === 0) {
+                    return;
+                }
+
+                // Need to convert lines and pages to pixels if we aren't already in pixels
+                // There are three delta modes:
+                //   * deltaMode 0 is by pixels, nothing to do
+                //   * deltaMode 1 is by lines
+                //   * deltaMode 2 is by pages
+                if (orgEvent.deltaMode === 1) {
+                    var lineHeight = $.data(this, 'mousewheel-line-height');
+                    delta *= lineHeight;
+                    deltaY *= lineHeight;
+                    deltaX *= lineHeight;
+                } else if (orgEvent.deltaMode === 2) {
+                    var pageHeight = $.data(this, 'mousewheel-page-height');
+                    delta *= pageHeight;
+                    deltaY *= pageHeight;
+                    deltaX *= pageHeight;
+                }
+
+                // Store lowest absolute delta to normalize the delta values
+                absDelta = Math.max(Math.abs(deltaY), Math.abs(deltaX));
+
+                if (!lowestDelta || absDelta < lowestDelta) {
+                    lowestDelta = absDelta;
+
+                    // Adjust older deltas if necessary
+                    if (shouldAdjustOldDeltas(orgEvent, absDelta)) {
+                        lowestDelta /= 40;
+                    }
+                }
+
+                // Adjust older deltas if necessary
+                if (shouldAdjustOldDeltas(orgEvent, absDelta)) {
+                    // Divide all the things by 40!
+                    delta /= 40;
+                    deltaX /= 40;
+                    deltaY /= 40;
+                }
+
+                // Get a whole, normalized value for the deltas
+                delta = Math[delta >= 1 ? 'floor' : 'ceil'](delta / lowestDelta);
+                deltaX = Math[deltaX >= 1 ? 'floor' : 'ceil'](deltaX / lowestDelta);
+                deltaY = Math[deltaY >= 1 ? 'floor' : 'ceil'](deltaY / lowestDelta);
+
+                // Add information to the event object
+                event.deltaX = deltaX;
+                event.deltaY = deltaY;
+                event.deltaFactor = lowestDelta;
+                // Go ahead and set deltaMode to 0 since we converted to pixels
+                // Although this is a little odd since we overwrite the deltaX/Y
+                // properties with normalized deltas.
+                event.deltaMode = 0;
+
+                // Add event and delta to the front of the arguments
+                args.unshift(event, delta, deltaX, deltaY);
+
+                // Clearout lowestDelta after sometime to better
+                // handle multiple device types that give different
+                // a different lowestDelta
+                // Ex: trackpad = 3 and mouse wheel = 120
+                if (nullLowestDeltaTimeout) {
+                    clearTimeout(nullLowestDeltaTimeout);
+                }
+                nullLowestDeltaTimeout = setTimeout(nullLowestDelta, 200);
+
+                return ($.event.dispatch || $.event.handle).apply(this, args);
+            }
+
+            function nullLowestDelta() {
+                lowestDelta = null;
+            }
+
+            function shouldAdjustOldDeltas(orgEvent, absDelta) {
+                // If this is an older event and the delta is divisable by 120,
+                // then we are assuming that the browser is treating this as an
+                // older mouse wheel event and that we should divide the deltas
+                // by 40 to try and get a more usable deltaFactor.
+                // Side note, this actually impacts the reported scroll distance
+                // in older browsers and can cause scrolling to be slower than native.
+                // Turn this off by setting $.event.special.mousewheel.settings.adjustOldDeltas to false.
+                return special.settings.adjustOldDeltas && orgEvent.type === 'mousewheel' && absDelta % 120 === 0;
+            }
+
+        }));
+
+    </script>
+        <script>
+        AOS.init();
+
     </script>
 
-</body></html>
+</body>
+
+</html>

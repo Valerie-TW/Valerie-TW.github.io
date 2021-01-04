@@ -1,0 +1,38 @@
+body{
+    overflow-x: hidden;
+}
+.box{   
+    height: 200vh;
+    background-color: cadetblue;
+}
+
+.box1{
+    width: 600px;
+    height: 500px;
+    background-color: darkkhaki;
+    margin-top: 200px;
+    margin-left: 55px;
+    margin-bottom: 200px;
+    
+}
+
+.sfixed{
+    position: fixed;
+    top: 1000px;
+    left: 0px;
+    z-index: 10;
+}
+.scroll{
+   position: sticky;
+}
+
+div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+#theory{
+    
+    
+}

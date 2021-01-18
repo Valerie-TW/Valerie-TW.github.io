@@ -39,8 +39,11 @@ body{
     
 }
 
-.box2{
-    
+.box2-left{
+    padding: 2%;
+    /* padding-bottom: 4%; */
+    text-align: center;
+    color: white;
 }
 
 
@@ -53,5 +56,147 @@ body{
 .btn{
     min-width: 50px;
 }
+
+/* defendant */
+.defendant {
+    padding: 2%;
+}
+.defendant input[type="radio"] {
+	display: none;
+}
+
+.defendant input[type="radio"] + label {
+	display: inline-block;
+    background-color:#343A40 ;
+    color: white;
+	cursor: pointer;
+    padding: 5px 10px;
+    border-radius:3px;
+    border-color: white;
+    /* border-style: dashed; */
+    margin: 1%;
+}
+
+.defendant input[type="radio"]:checked + label {
+	background-color:white;
+	color: #343A40;
+}
+
+
+/* marrige years */
+.marrige-year {
+    padding: 2%;
+}
+.marrige-year input[type="radio"] {
+	display: none;
+}
+
+.marrige-year input[type="radio"] + label {
+	display: inline-block;
+    background-color:#343A40 ;
+    color: white;
+	cursor: pointer;
+    padding: 5px 10px;
+    border-radius:3px;
+    border-color: white;
+    /* border-style: dashed; */
+    margin: 1%;
+}
+
+.marrige-year input[type="radio"]:checked + label {
+	background-color:white;
+	color: #343A40;
+}
+
+/* affair month */
+.affair-month {
+    padding: 2%;
+}
+.affair-month input[type="radio"] {
+	display: none;
+}
+
+.affair-month input[type="radio"] + label {
+	display: inline-block;
+    background-color:#343A40 ;
+    color: white;
+	cursor: pointer;
+    padding: 5px 10px;
+    border-radius:3px;
+    border-color: white;
+    /* border-style: dashed; */
+    margin: 1%;
+}
+
+.affair-month input[type="radio"]:checked + label {
+	background-color:white;
+	color: #343A40;
+}
+
+/* sexaul-behavir */
+
+.sexaul-behavior {
+    padding: 2%;
+}
+.sexaul-behavior input[type="radio"] {
+	display: none;
+}
+
+.sexaul-behavior input[type="radio"] + label {
+	display: inline-block;
+    background-color:#343A40 ;
+    color: white;
+	cursor: pointer;
+    padding: 5px 10px;
+    border-radius:3px;
+    border-color: white;
+    /* border-style: dashed; */
+    margin: 1%;
+}
+
+.sexaul-behavior input[type="radio"]:checked + label {
+	background-color:white;
+	color: #343A40;
+}
+
+#sexaul-behavior2-evidence{
+    display: none;
+}
+
+.box3{
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: white;
+    color: #343A40;
+    border-radius: 3px;
+    padding: 2%;
+}
+
+/* sexaul behavior envidence */
+.sexaul-envidence2 {
+    padding: 2%;
+}
+.sexaul-envidence2 input[type="checkbox"] {
+	display: none;
+}
+
+.sexaul-envidence2 input[type="checkbox"] + label {
+	display: inline-block;
+    background-color:white ;
+    color: #343A40;
+	cursor: pointer;
+    padding: 5px 10px;
+    border-radius:3px;
+    border-color: white;
+   
+    margin: 1%;
+}
+
+.sexaul-envidence2 input[type="checkbox"]:checked + label {
+	background-color:#343A40;
+	color: white;
+}
+
+
 
 

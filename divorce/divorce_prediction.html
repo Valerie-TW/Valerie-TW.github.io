@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<meta http-equiv="Content-type" content="text/html;charset=ENCODING">
+<html>
+
+<head>
+    <title>Divorce Pridiction</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/test.scss">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand col-sm-10" href="#"><img src="img/hammer.png">&emsp;Divorce Pridiction</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse col-som-2" id="navbarNav">
+            <ul class="navbar-nav " style="">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link active" href="#">Theory</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</head>
+
+<body>
+    <section id="banner">
+
+    </section>
+
+    <section style="height: 10vh; margin-bottom: 1%; margin-top: 1%;">
+        <div style="">
+            <button id="start-analysis" type="button" class="btn btn-outline-dark click-test">開始分析</button>
+        </div>
+    </section>
+
+    <section id="questionnaire" class="test1">
+        <div class="box">
+            <h3 style="margin-bottom: 20px;">請問您要提告的對象是？</h3>
+            <div id="reason" class="row">
+
+                <div class="col-sm-4"><input name="button1" type="button" value="配偶" onclick="change1(this)" class="btn btn-dark"/></div>
+                <div class="col-sm-4"><input name="button2" type="button" value="第三者" onclick="change2(this)" class=" btn btn-dark"/></div>
+                <div class="col-sm-4"><input name="button3" type="button" value="配偶＆第三者" onclick="change3(this)" class="btn btn-dark"/></div>
+             
+            </div>
+         </div>
+
+         <div class="box">
+            <h3 style="margin-bottom: 20px;">請問您的婚姻時間長度？</h3>
+            <div id="reason" class="row">
+
+                <div class="col-sm-4"><input name="button1" type="button" value="五年以下" onclick="change1(this)" class="btn btn-dark"/></div>
+                <div class="col-sm-4"><input name="button2" type="button" value="五年以上，未滿十年" onclick="change2(this)" class=" btn btn-dark"/></div>
+                <div class="col-sm-4"><input name="button3" type="button" value="十年以上" onclick="change3(this)" class="btn btn-dark"/></div>
+             
+            </div>
+         </div>
+
+         <div class="box">
+            <h3 style="margin-bottom: 20px;">請問對方外遇時間長度？</h3>
+            <div id="reason" class="row">
+
+                <div class="col-sm-4"><input name="button1" type="button" value="一年以下" onclick="change1(this)" class="btn btn-dark"/></div>
+                <div class="col-sm-4"><input name="button2" type="button" value="一年以上，未滿五年" onclick="change2(this)" class=" btn btn-dark"/></div>
+                <div class="col-sm-4"><input name="button3" type="button" value="五年以上" onclick="change3(this)" class="btn btn-dark"/></div>
+             
+            </div>
+         </div>
+
+         <div class="box">
+             <div>
+            <h3 style="margin-bottom: 20px;">侵害配偶權的程度</h3>
+        </div>
+         </div>
+
+
+
+
+    </section>
+
+
+</body>
+
+</html>

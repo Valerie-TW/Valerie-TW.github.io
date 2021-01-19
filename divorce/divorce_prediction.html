@@ -84,9 +84,136 @@
             </div>
         </div>
 
-        <div class="box">
+        <!-- <div class="box">
             <h3 style="margin-bottom: 20px;">請問您的婚姻時間長度？</h3>
-            <div id="reason" class="row marrige-year">
+            <div id="marrige-year" class="row marrige-year">
+                <div class="col-sm-4">
+                    <input type="radio" id="one-year" name="marrige-year">
+                    <label for="one-year">一年以下</label>
+                </div>
+                <div class="col-sm-4">
+                    <input type="radio" id="one-five" name="marrige-year">
+                    <label for="one-five">一年以上，未滿五年</label>
+                </div>
+                <div class="col-sm-4">
+                    <input type="radio" id="over-five" name="marrige-year">
+                    <label for="over-five">五年以上</label>
+                </div>
+
+            </div>
+        </div> -->
+
+        <!-- <div class="box">
+            <h3 style="margin-bottom: 20px;">請問對方外遇時間長度？</h3>
+            <div id="affair-month" class="row affair-month">
+
+                <div class="col-sm-4">
+                    <input type="radio" id="six-month" name="affair-month">
+                    <label for="six-month">六個月以下</label>
+                </div>
+                <div class="col-sm-4">
+                    <input type="radio" id="6-12month" name="affair-month">
+                    <label for="6-12month">六個月以上，未滿一年</label>
+                </div>
+                <div class="col-sm-4">
+                    <input type="radio" id="over-12" name="affair-month">
+                    <label for="over-12">一年以上</label>
+                </div>
+
+            </div>
+        </div> -->
+
+        <div class="box">
+            <h3 style="margin-bottom: 20px;">侵害配偶權的程度</h3>
+            <!-- sexaul behavior start -->
+            <div>
+                <div class="row">
+                    <div class="col-sm-3 box2-left" style="">對方有無發生性行為?</div>
+                    <div class="col-sm-9">
+
+                        <div class="sexaul-behavior">
+                            <input type="radio" id="sexaul-behavior-children" name="sexaul-behavior"
+                                class="click-sexaul-behavior-children">
+                            <label for="sexaul-behavior-children">有，且有非婚生子女</label>
+
+                            <input type="radio" id="sexaul-behavior-y2" name="sexaul-behavior"
+                                class="click-sexual-behavior-y2">
+                            <label for="sexaul-behavior-y2">有，發生兩次以上</label>
+
+
+                            <input type="radio" id="sexaul-behavior-y1" name="sexaul-behavior"
+                                class="click-sexual-behavior-y1">
+                            <label for="sexaul-behavior-y1">有，發生一次</label>
+
+                            <input type="radio" id="sexaul-behavior-none" name="sexaul-behavior"
+                                class="click-sexual-behavior-none">
+                            <label for="sexaul-behavior-none">沒有發生</label>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="sexaul-behavior2-envidence" class="box3 sexaul-behavior2-envidence">
+                    <div>
+                        <h5>請問您有蒐集到證據嗎?</h5>
+                        <div class="sexaul-envidence2">
+                            <input type="checkbox" id="vedio" name="sexaul-envidence" class="">
+                            <label for="vedio">我有性行為的影片或照片</label>
+
+                            <input type="checkbox" id="witness" name="sexaul-envidence">
+                            <label for="witness">我有證人可以證明</label>
+
+                            <input type="checkbox" id="no-envidence" name="sexaul-envidence" class="click-no-envidence">
+                            <label for="no-envidence">我沒有證據</label>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- sexaul behavior end -->
+            <!-- physical contact -->
+            <div>
+                <div class="row">
+                    <div class="col-sm-4 box2-left" style="">除了性行為之外，<br>對方有無過於親暱的肢體接觸?</div>
+                    <div class="col-sm-8">
+
+                        <div class="pysical-contact">
+                            <input type="radio" id="physical-contact-y" name="physical-contact"
+                                class="click-physical-contact-y">
+                            <label for="physical-contact-y">有發生</label>
+
+                            <input type="radio" id="physical-contact-n" name="physical-contact"
+                                class="click-physical-contact-n">
+                            <label for="physical-contact-n">沒有發生</label>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="physical-contact-envidence" class="box3 physical-contact-envidence">
+                    <div>
+                        <h5>請問您有蒐集到證據嗎?</h5>
+                        <div class="physical-contact-envidence">
+                            <input type="checkbox" id="pc-vedio" name="physical-contact-envidence"
+                                class=".click-physical-contact-y">
+                            <label for="pc-vedio">我有親密接觸的的影片或照片</label>
+
+                            <input type="checkbox" id="pc-witness" name="physical-contact-envidence">
+                            <label for="pc-witness">我有證人可以證明</label>
+
+                            <input type="checkbox" id="pc-no-envidence" name="physical-contact-envidence"
+                                class="click-no-phy-envidence">
+                            <label for="pc-no-envidence">我沒有證據</label>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- physical contact end -->
+
+        </div>
+
+        <div class="box">
+            <h3 style="margin-bottom: 20px;">請問您與配偶是否育有未成年子女？</h3>
+            <div id="marrige-year" class="row marrige-year">
                 <div class="col-sm-4">
                     <input type="radio" id="one-year" name="marrige-year">
                     <label for="one-year">一年以下</label>
@@ -103,69 +230,6 @@
             </div>
         </div>
 
-        <div class="box">
-            <h3 style="margin-bottom: 20px;">請問對方外遇時間長度？</h3>
-            <div id="reason" class="row affair-month">
-
-                <div class="col-sm-4">
-                    <input type="radio" id="six-month" name="affair-month">
-                    <label for="six-month">六個月以下</label>
-                </div>
-                <div class="col-sm-4">
-                    <input type="radio" id="6-12month" name="affair-month">
-                    <label for="6-12month">六個月以上，未滿一年</label>
-                </div>
-                <div class="col-sm-4">
-                    <input type="radio" id="over-12" name="affair-month">
-                    <label for="over-12">一年以上</label>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="box">
-            <h3 style="margin-bottom: 20px;">侵害配偶權的程度</h3>
-            <div>
-                <div class="row">
-                    <div class="col-sm-4 box2-left" style="">對方有無發生性行為?</div>
-                    <div class="col-sm-8">
-
-                        <div class="sexaul-behavior">
-                            <input type="radio" id="sexaul-behavior-y2" name="sex" class="click-sexual-behavior-y2">
-                            <label for="sexaul-behavior-y2">有，發生兩次以上</label>
-
-
-                            <input type="radio" id="sexaul-behavior-y1" name="sex" class="click-sexual-behavior-y1">
-                            <label for="sexaul-behavior-y1">有，發生一次</label>
-
-                            <input type="radio" id="sexaul-behavior-none" name="sex" class="click-sexual-behavior-none">
-                            <label for="sexaul-behavior-none">沒有發生</label>
-                        </div>
-
-                    </div>
-                </div>
-                <div id="sexaul-behavior2-evidence" class="box3 sexaul-behavior2-evidence">
-                    <div>
-                        <h5>請問您有蒐集到證據嗎?</h5>
-                        <div class="sexaul-envidence2">
-                            <input type="checkbox" id="vedio" name="sex" class="">
-                            <label for="vedio">我有性行為的影片或照片</label>
-
-                            <input type="checkbox" id="witness" name="sex">
-                            <label for="witness">我有證人可以證明</label>
-
-                            <input type="checkbox" id="no-envidence" name="sex">
-                            <label for="no-envidence">我沒有證據</label>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4 box2-left" style="">對方有無發生性行為?</div>
-                <div class="col-sm-8"></div>
-            </div>
-        </div>
 
 
 

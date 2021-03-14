@@ -69,7 +69,7 @@
                 <!-- check box -->
 
                 <div class="col-sm-4">
-                    <input type="radio" id="spouse" name="defendant">
+                    <input type="radio" id="spouse" name="defendant" class="click-spouse">
                     <label for="spouse">配偶</label>
                 </div>
                 <div class="col-sm-4">
@@ -152,7 +152,7 @@
 
                     </div>
                 </div>
-                <div id="sexaul-behavior2-envidence" class="box3 sexaul-behavior2-envidence">
+                <!-- <div id="sexaul-behavior2-envidence" class="box3 sexaul-behavior2-envidence">
                     <div>
                         <h5>請問您有蒐集到證據嗎?</h5>
                         <div class="sexaul-envidence2">
@@ -167,7 +167,7 @@
                         </div>
                     </div>
 
-                </div>
+                </div> -->
             </div>
             <!-- sexaul behavior end -->
             <!-- physical contact -->
@@ -188,7 +188,7 @@
 
                     </div>
                 </div>
-                <div id="physical-contact-envidence" class="box3 physical-contact-envidence">
+                <!-- <div id="physical-contact-envidence" class="box3 physical-contact-envidence">
                     <div>
                         <h5>請問您有蒐集到證據嗎?</h5>
                         <div class="physical-contact-envidence">
@@ -205,29 +205,86 @@
                         </div>
                     </div>
 
-                </div>
+                </div> -->
             </div>
             <!-- physical contact end -->
 
         </div>
 
         <div class="box">
-            <h3 style="margin-bottom: 20px;">請問您與配偶是否育有未成年子女？</h3>
-            <div id="marrige-year" class="row marrige-year">
-                <div class="col-sm-4">
-                    <input type="radio" id="one-year" name="marrige-year">
-                    <label for="one-year">一年以下</label>
+            <h3 style="margin-bottom: 20px;">基本資料</h3>
+            
+            <div id='children'>
+                <div id="" class="row children ">
+                    <div class="col-sm-8 box2-left">
+                        請問您是否育有未成年子女?
+                    </div>
+                    <div class="row col-sm-4" style="">
+                        <div class="" style="margin: 5%;">
+                            <input type="radio" id="children-y" name="children">
+                            <label for="children-y">是</label>
+                        </div>
+                        <div class="" style="margin: 5%;">
+                            <input type="radio" id="children-n" name="children">
+                            <label for="children-n">否</label>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="col-sm-4">
-                    <input type="radio" id="one-five" name="marrige-year">
-                    <label for="one-five">一年以上，未滿五年</label>
+            </div>
+
+            <div id='spirit'>
+                <div id="" class="row spirit ">
+                    <div class="col-sm-8 box2-left">
+                        請問您是否因此事件而有精神上的困擾?
+                    </div>
+                    <div class="row col-sm-4" style="">
+                        <div class="" style="margin: 5%;">
+                            <input type="radio" id="spirit-y" name="spirit">
+                            <label for="spirit-y">是</label>
+                        </div>
+                        <div class="" style="margin: 5%;">
+                            <input type="radio" id="spirit-n" name="spirit">
+                            <label for="spirit-n">否</label>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="col-sm-4">
-                    <input type="radio" id="over-five" name="marrige-year">
-                    <label for="over-five">五年以上</label>
+            </div>
+
+            <div id='salary'>
+                <div id="" class="row ">
+                    <div class="col-sm-8 box2-left">
+                        請填入您的薪資
+                    </div>
+                    <div class="row col-sm-4" style="">
+                        <input type="text" id="user-salary">
+                    </div>
+                </div>
+                
+                <div id="spouse-salary-main" class="row spouse-salary-main">
+                    <div class="col-sm-8 box2-left">
+                        請填入您配偶的薪資
+                    </div>
+                    <div class="row col-sm-4" style="">
+                        <input type="text" id="spouse-salary">
+                    </div>
+
+                </div>
+
+                <div id="other-salary-main" class="row ">
+                    <div class="col-sm-8 box2-left">
+                        請填入第三者的薪資
+                    </div>
+                    <div class="row col-sm-4" style="">
+                        <input type="text" id="other-salary">
+                    </div>
+
                 </div>
 
             </div>
+
+
         </div>
 
 
